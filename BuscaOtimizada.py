@@ -4,6 +4,7 @@ import AlgoritmoOrdenacao as AO
 # Busca Sequencial Otimizada
 
 
+
 def buscaSequencialOtimizada(V, q):
     inicio = time.time()
     n = len(V)
@@ -17,6 +18,7 @@ def buscaSequencialOtimizada(V, q):
             if VOrdenado[j] <= q[i]:
                 if VOrdenado[j] == q[i]:
                     arquivo.write(str(q[i]) + "\n")
+                    break
             else:
                 break
     fim = time.time()

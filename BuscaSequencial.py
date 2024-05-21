@@ -13,6 +13,7 @@ def buscaSequencial(V, q):
         for j in range(len(V)):
             if V[j] == q[i]:
                 result.append(str(q[i]))
+                break
     fim = time.time()  # Salva o tempo de fim
     BuscaSequencial = fim - inicio  # Calcula o tempo de execução
     return BuscaSequencial
